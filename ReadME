@@ -1,0 +1,2 @@
+Install Ollama 
+run the following commands to dowload the models from ollama : ollama run llama3.1 // ollama run llama2 // ollama run stable-code
