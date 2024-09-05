@@ -46,6 +46,6 @@ if llm:
         
         parsed_response = output_parser.parse(response)
         
-        st.session_state.conversation_history.append(f"Bot: {parsed_response}")
+        st.session_state.chat_log.append(f"Bot: {parsed_response}")
 
         st.write(parsed_response)
