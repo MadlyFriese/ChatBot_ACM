@@ -21,13 +21,7 @@ if st.session_state.previous_model != option:
     st.session_state.chat_log = []
     st.session_state.previous_model = option
 
-llm = None
-if option == "llama2":
-    llm = Ollama(model="llama2")
-elif option == "llama3.1:8b":
-    llm = Ollama(model="llama3.1:8b")
-elif option == "stable-code":
-    llm = Ollama(model="stable-code")
+llm = Ollama(model=option)
 
 for message in st.session_state.chat_log:
     role, content = message.split(": ", 1)
